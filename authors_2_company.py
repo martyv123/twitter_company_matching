@@ -51,8 +51,6 @@ def author_company_match():
         csv_reader = csv.DictReader(csv_file)
         count = 0
         for row in csv_reader:
-            if count == 50:
-                break
             count += 1
             print("Author Company Match: " + str(count))
             # fuzzywuzzy matching for best match
